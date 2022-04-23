@@ -1,0 +1,18 @@
+.BoxPrincipal{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.Box2{
+    color: red;
+    width: 100px;
+    height: 300px;
+    background-color: brown;
+    padding-left: 10px;
+    border-style:solid;
+    border-color: black;
+}
+.title{
+    text-align: center;
+}
