@@ -16,3 +16,8 @@
 .title{
     text-align: center;
 }
+
+.Navigation{
+    display: flex;
+    justify-content: center;
+}
