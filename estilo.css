@@ -14,14 +14,41 @@
     border-color: black;
 }
 .title{
+    font-size: 100px;
     text-align: center;
+    color: azure;
 }
 
 .Navigation{
     display: flex;
     justify-content: center;
+    font-size: larger;
+    
 }
 
 .Botonera{
-    
+    font-size: xx-large;
+    list-style: none;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.Word{
+    text-decoration-line: none;
+    color: aliceblue;
+    cursor: pointer;
+    border-color: blueviolet;
+    border-style: hidden;
+    font-family: ;
+}
+
+.Word:hover{
+    background-color: white;
+    color: red;
+}
+
+body{
+    background-image:url(images/cafe.jpg);
+    background-size: cover;
+    font-family: monospace;
 }
