@@ -16,6 +16,17 @@
 .title{
     text-align: center;
 }
+<<<<<<< HEAD
 .comidas{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+=======
+
+.Navigation{
+    display: flex;
+    justify-content: center;
+}
+
+.Botonera{
+    
+>>>>>>> origin/main
 }
