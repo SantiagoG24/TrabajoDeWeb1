@@ -21,15 +21,74 @@
 .Navigation{
     display: flex;
     justify-content: center;
+    font-size: larger;
+    
 }
 
 .Botonera{
     list-style: none;
     font-family: 'Times New Roman';
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .Word{
-    color: aliceblue;
+    position: relative;
+	display: block;
+	padding: 25px 10px;
+	border-radius: 6px;
+	text-align: center;
+	font-weight: bold;
+	max-width: 320px;
+	height: 65px;
+	margin-bottom: 60px;
+	overflow: hidden;
+	color:rgba(255,255,255,1);
+	cursor: pointer;
+	letter-spacing: 2px;
+	box-shadow:inset 0 0 0 1px rgba(0,0,0,0.1);
+	text-decoration: none;
+	transition: all ease 0.5s;
+	background:#10B87B;
+}
+
+.W:after,
+.Word:before{
+	width: 80px;
+	height: 200px;
+	content: '';
+	display: block;
+	background: rgba(255,255,255,0.5);
+	transform: rotate(45deg);
+	top: -60px;
+	position: absolute;
+	transition: none;
+	right:-45%;
+	cursor: pointer;
+}
+
+.Word:before{
+	left: -48%;
+}
+
+.Word:hover{
+	text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+	background:#12C987
+}
+
+.Word:hover:after,
+.Word:hover:before{
+	transform: rotate(45deg), scaleX(130%);
+	background: rgba(255,255,255,0.1);
+	transition: all ease 0.5s;
+}
+
+.Word:hover:after{
+	right: 130%;
+}
+
+.Word:hover:before{
+	left: 130%;
 }
 
 body{
