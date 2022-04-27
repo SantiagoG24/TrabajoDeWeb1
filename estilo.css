@@ -44,12 +44,10 @@
     border-style: hidden;
     font-size: 90px;
 }
-
 .Word:hover{
-    background-color: white;
-    color: red;
+    background-color:#493906;
+    color: white;
 }
-
 body{
     background-image:url(images/cafe\ 4.jpg);
     font-family: monospace; 
