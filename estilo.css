@@ -54,9 +54,6 @@ body{
     background-image:url(images/cafe\ 4.jpg);
     font-family: monospace; 
     background-repeat: repeat;
-    background-image:url(cafe.jpg);
-    background-size: cover;
-    font-family: monospace;
 }
 
 .formulario{
