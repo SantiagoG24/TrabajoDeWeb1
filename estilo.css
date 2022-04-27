@@ -63,6 +63,18 @@ body{
     font-family: fantasy;
 }
 
+.formulario2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.formulario3{
+    margin-right: 300px;
+    margin-left: 30px;
+
+}
+
 .parrafo{
     text-align: left;
 }
