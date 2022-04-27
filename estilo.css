@@ -37,9 +37,6 @@
     text-decoration-line: none;
     color: aliceblue;
     cursor: pointer;
-    border-color: blueviolet;
-    border-style: hidden;
-    font-family: ;
 }
 
 .Word:hover{
@@ -51,4 +48,19 @@ body{
     background-image:url(cafe.jpg);
     background-size: cover;
     font-family: monospace;
+}
+
+.formulario{
+    background-color: bisque;
+    text-align: center;
+    font-size: xx-large;
+    font-family: fantasy;
+}
+
+.parrafo{
+    text-align: left;
+}
+
+.usuario{
+    font-size: x-large;
 }
