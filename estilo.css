@@ -73,11 +73,12 @@ body{
     font-size: 50px;
 }
 th{
-    background-color: rgb(32, 191, 109);
+    background-color: rgb(38, 27, 5);
     color: white    ;
 }       
 tbody{
-    color: blue;
+    color:white;
+    font-size: 40px;    
 }
 tfoot{
     color: white;
@@ -87,7 +88,7 @@ table,td,tr {
     border-collapse:collapse;
 }
 table{
-    width: 3500px;
+    width: 3800px;
     height: 500px;px;
     background-color: rgb(38, 27, 5);
 }
@@ -102,4 +103,7 @@ table{
 .TextodelaTabla{
     font-size: 30px;
     text-align: justify;
+}
+.TopdelaTabla{
+    font-size: 40px;
 }
