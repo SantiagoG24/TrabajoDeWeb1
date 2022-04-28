@@ -68,3 +68,38 @@ body{
 .usuario{
     font-size: x-large;
 }
+
+.subtitulo{
+    font-size: 50px;
+}
+th{
+    background-color: rgb(32, 191, 109);
+    color: white    ;
+}       
+tbody{
+    color: blue;
+}
+tfoot{
+    color: white;
+}
+table,td,tr {
+    border: 2px solid black;
+    border-collapse:collapse;
+}
+table{
+    width: 3500px;
+    height: 500px;px;
+    background-color: rgb(38, 27, 5);
+}
+.FotosdelaTabla{
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+    width: 500px;  
+    height: 400px; ;
+
+}
+.TextodelaTabla{
+    font-size: 30px;
+    text-align: justify;
+}
