@@ -23,7 +23,7 @@
 }
 
 .Navigation{
-    background-color: rgb(38, 27, 5) ;
+    background-color: rgba(38, 27, 5, 0.877) ;
     display: flex;
     justify-content: center;
     font-size: larger;
