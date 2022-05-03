@@ -80,7 +80,6 @@ body{
 
 .usuario{
     font-size: x-large;
-<<<<<<< HEAD
 }
 
 .subtitulo{
@@ -103,7 +102,7 @@ table,td,tr {
 }
 table{
     width: 3800px;
-    height: 500px;px;
+    height: 500px;
     background-color: rgb(38, 27, 5);
 }
 .FotosdelaTabla{
@@ -122,6 +121,3 @@ table{
     font-size: 40px;
  } 
  
-=======
-}
->>>>>>> 70b7a393fb688b97dc6ecfdbbfa735d95287ab47
