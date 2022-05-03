@@ -92,7 +92,7 @@ body{
 }
 th{
     background-color: rgb(38, 27, 5);
-    color: white    ;
+    color: white;
 }       
 tbody{
     color:white;
@@ -116,7 +116,6 @@ table{
     padding: 5%;
     width: 500px;  
     height: 400px; ;
-
 }
 .TextodelaTabla{
     font-size: 20px;
