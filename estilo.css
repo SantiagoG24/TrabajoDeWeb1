@@ -124,3 +124,7 @@ table{
 .TopdelaTabla{
     font-size: 30px;
  }
+ .Texto{
+    font-size: 40px;
+    color: rgba(10, 13, 189);
+ }
