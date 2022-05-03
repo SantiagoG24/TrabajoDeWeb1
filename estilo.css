@@ -17,7 +17,7 @@
     border-color: black;
 }
 .title{
-    font-size: 200px;
+    font-size:100px;
     text-align: center;
     color: black;
 }
@@ -71,7 +71,7 @@ body{
 }
 
 .subtitulo{
-    font-size: 100px;
+    font-size: 60px;
 }
 th{
     background-color: rgb(38, 27, 5);
@@ -89,8 +89,8 @@ table,td,tr {
     border-collapse:collapse;
 }
 table{
-    width: 3800px;
-    height: 500px;
+    width: 1500px;
+    height: 1500px;
     background-color: rgb(38, 27, 5);
 }
 .FotosdelaTabla{
@@ -102,10 +102,10 @@ table{
 
 }
 .TextodelaTabla{
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
 }
 .TopdelaTabla{
-    font-size: 40px;
+    font-size: 30px;
  } 
  
