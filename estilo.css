@@ -91,7 +91,7 @@ body{
     font-size: 60px;
 }
 th{
-    background-color: rgb(38, 27, 5);
+    background-color: rgba(38, 27, 5, 0.877);
     color: white;
 }       
 tbody{
@@ -108,7 +108,7 @@ table,td,tr {
 table{
     width: 1500px;
     height: 1500px;
-    background-color: rgb(38, 27, 5);
+    background-color: rgba(38, 27, 5, 0.877);
 }
 .FotosdelaTabla{
     display: flex;
@@ -123,8 +123,18 @@ table{
 }
 .TopdelaTabla{
     font-size: 30px;
- }
- .Texto{
-    font-size: 40px;
-    color: rgba(10, 13, 189);
- }
+}
+.Texto{
+    font-size: 50px;
+}
+.Block1{
+    background-color: rgba(38, 27, 5, 0.877);
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.Imgcafe{
+    display: flex;
+    justify-content: center;
+}
