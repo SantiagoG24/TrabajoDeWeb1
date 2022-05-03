@@ -23,6 +23,7 @@
 }
 
 .Navigation{
+    background-color: rgb(38, 27, 5) ;
     display: flex;
     justify-content: center;
     font-size: larger;
@@ -30,11 +31,8 @@
 }
 
 .Botonera{
-    font-size: xx-large;
+    font-size: large;
     list-style: none;
-    margin-left: 10%;
-    margin-right: 10%;
-    background-color: rgb(38, 27, 5) ;
     padding-top: 1%;
     padding-left: 1%;
     padding-right: 1%;
