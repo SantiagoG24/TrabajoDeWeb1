@@ -23,10 +23,13 @@
                 <div class="formulario3">Nombre:<input class="usuario" type="text"></div>
                 <div class="formulario3">Apellido: <input class="usuario" type="text"></div>
                 <div class="formulario3">Mail: <input class="usuario" type="text"></div>
-                <script src="scrpit.js"></script>
-                <div class="formulario3">Mensaje: <input class="usuario" type="text"> <button onclick="enviar();">ENVIAR</button></div>
+                <div class="formulario3">Mensaje: <input class="usuario" type="text"> <button onclick="enviar(event);">ENVIAR</button></div>
+                <div id="captcha"></div>
+                <input id="respuesta" type="text">
+                <div id="resultado"></div>
             </div>
         </form>
     </div>
+    <script src="scrpit.js"></script>
 </body>
 </html>
