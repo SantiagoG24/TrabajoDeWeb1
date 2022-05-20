@@ -70,7 +70,8 @@ body{
 }
 
 .formulario2{
-    display: block;
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
 }
 .parrafo{
