@@ -62,23 +62,17 @@ body{
 }
 
 .formulario{
+    height: 500px;
     background-color: bisque;
-    text-align: center;
+    text-align: left;
     font-size: xx-large;
+    justify-content: center;
 }
 
 .formulario2{
-    display: flex;
-    /* flex-direction: row; */
+    display: block;
     flex-wrap: wrap;
 }
-
-.formulario3{
-    margin-right: 300px;
-    margin-left: 30px;
-
-}
-
 .parrafo{
     text-align: left;
 }
@@ -136,4 +130,70 @@ table{
 .Imgcafe{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+}
+.boton_enviar{
+    justify-content: end;
+}
+.formulario3{
+    margin-left: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+.Blocke_captcha{
+    display: inline;
+    flex-direction: row;
+}
+@media only screen and (max-width:1515px) {
+    table{
+        width: 1000px;
+        height: 550px;  
+    }
+    td{
+        font-size: 25px;
+    }
+    .FotosdelaTabla{
+        width: 250px;  
+        height: 200px;
+    }
+    .title{
+        font-size: 80px;
+    }
+    .Word{
+        font-size: 40px;
+    }
+    .subtitulo{
+        font-size: 40px;
+    }
+}
+@media only screen and (max-width:915px) {
+    .Texto{
+        font-size: 40px;
+    }
+    .title{
+        font-size:60px;
+    }
+    .TextodelaTabla{
+        font-size: 5px; 
+    }
+    .Word{
+        font-size: 25px;
+    }
+    table{
+        width: 700px;
+        height: 400px;  
+    }
+    td{
+        font-size: 25px;
+    }
+    .FotosdelaTabla{
+        width: 250px;  
+        height: 200px;
+    }
+    .subtitulo{
+        font-size: 30px;
+    }
+    .formulario{
+        height: 450px;
+    }
 }
