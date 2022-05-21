@@ -159,15 +159,18 @@ table{
         font-size: 80px;
     }
     .Word{
-        font-size: 40px;
+        font-size: 60px;
     }
     .subtitulo{
         font-size: 40px;
     }
+    .Texto{
+        font-size: 35px;
+    }
 }
 @media only screen and (max-width:915px) {
     .Texto{
-        font-size: 40px;
+        font-size: 30px;
     }
     .title{
         font-size:60px;
@@ -176,7 +179,7 @@ table{
         font-size: 5px; 
     }
     .Word{
-        font-size: 25px;
+        font-size: 55px;
     }
     table{
         width: 700px;
