@@ -28,6 +28,8 @@
     justify-content: center;
     font-size: larger;
     flex-wrap: wrap;
+    margin-left: 10px;
+
 }
 
 .Botonera{
@@ -64,16 +66,10 @@ body{
 .formulario{
     height: 500px;
     background-color: bisque;
-    text-align: left;
     font-size: xx-large;
-    justify-content: center;
+    margin-left: 10px;
 }
 
-.formulario2{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
 .parrafo{
     text-align: left;
 }
@@ -136,13 +132,9 @@ table{
 .boton_enviar{
     justify-content: end;
 }
-.formulario3{
-    margin-left: 20px;
-    display: flex;
-    justify-content: flex-start;
-}
+
 .Blocke_captcha{
-    display: inline;
+    display: flex;
     flex-direction: row;
 }
 @media only screen and (max-width:1515px) {
