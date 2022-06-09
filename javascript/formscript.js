@@ -11,7 +11,6 @@ let valor3 = document.getElementById("respuesta");
 let final = document.getElementById("resultado");
 
 let refreshflase = document.getElementById("respuesta");
-
 function enviar(event){
     if ((valor1 + valor2) == valor3.value) {
         final.innerHTML = "El captcha es correcto";

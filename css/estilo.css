@@ -1,0 +1,269 @@
+.BoxPrincipal{
+    display: flex;
+    flex-direction: row;
+    width: 2500px;   
+    height: 500px;
+    margin: 100px;
+    
+}
+
+.Box2{
+    color: black;
+    width: 25000px;
+    height: 500px;
+    background-color:red;
+    padding-left: 10px;
+    border-style:solid;
+    border-color: black;
+}
+.title{
+    text-align: center;
+    color: black;
+}
+
+.Navigation{
+    background-color: rgba(38, 27, 5, 0.877) ;
+    max-width: 100%;
+    display: none;
+    justify-content: space-between;
+    font-size: larger;
+    flex-wrap: wrap;
+}
+
+ .Botonera{
+    display: inline;
+    font-size: large;
+    list-style: none;
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 1%;
+}
+
+.Word{
+    text-decoration-line: none;
+    color: white;
+    cursor: pointer;
+    border-color: rgb(82, 65, 18);
+    border-style: hidden;
+    font-size: 20px;
+} 
+.Word:hover{
+    background-color:#493906;
+    color: white;
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 1%;
+}
+body{
+    background-image:url(../images/cafe\ 4.jpg);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-repeat: repeat;
+}
+.parrafo{
+    text-align: left;
+}
+
+.usuario{
+    font-size: x-large;
+}
+
+.subtitulo{
+    font-size: 50px;
+}
+th{
+    color: white;
+    font-size: 1rem;
+} 
+td{
+    font-size: 1rem;
+}      
+tbody{
+    color:white;  
+    width: 70%;
+}
+
+table,td,tr {
+    border: 3px solid black;
+    border-collapse:collapse;
+}
+table{
+    background-color: rgba(38, 27, 5, 0.877);
+    width: 100%;
+
+}
+.FotosdelaTabla{
+    display: flex;
+    justify-content: center;
+    width: 150px;  
+    height: 100px; 
+    margin: 0;
+    border: 0;
+}
+.Tabla{
+    font-size: 0.5rem; 
+    width: 410px;
+    text-align: center;
+}
+.TopdelaTabla{
+    font-size: 0.5rem;
+}
+.Texto{
+    font-size: 19px;
+}
+.Block1{
+    background-color: rgba(38, 27, 5, 0.877);
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.Imgcafe{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.barras{
+    margin: 5px;
+    display: flex;
+    justify-content: start;
+    width: 60px;
+    height: 10px;
+    background-color: rgb(21, 21, 21);
+}
+.visible{
+    display: flex;
+}
+#BotonMenu{
+    background-color: rgba(38, 27, 5, 0.877);
+}
+#respuesta{
+    width:40%;
+    height: 80%;
+}
+#resultado{
+    width: 1rem;
+    height: 80%;
+
+}
+.formulario{
+    height: 100%;
+    background-color: bisque;
+    text-align: left;
+    padding: 2%;
+
+}
+.Block_captcha{
+    display: inline;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 30%;
+    height: 50%;
+}
+.form{
+    font-size: 2rem;
+}
+.btn-enviar{
+    width:80% ;
+    
+}
+#captcha.Block_captcha{
+    width: 40%;
+    font-size: 2rem;
+}
+.botones-captcha{
+    height: 100%;
+    background-color: bisque;  
+    display: flex;
+    padding: 2%;
+}
+.usuario{
+    width:60% ;
+    display: block;
+}
+@media only screen and (min-width:1650px) {
+    .title{
+        font-size: 100px;
+        display: flex;
+        width: 1860px;
+        justify-content: center;
+    }
+    .Word{
+        font-size: 50px;
+    }
+    .formulario{
+        font-size: 40px;
+    }
+    .TextodelaTabla{
+        width: 1895px;
+        height: 3500px;
+
+    }
+    th{
+        font-size: 3rem;
+    }
+    td{
+        width: 33%;
+        height: 250px;
+        font-size: 2rem;
+        
+    }
+    .FotosdelaTabla{
+        display: flex;
+        justify-content: end;
+        padding: 0.5rem;
+        width: 350px;  
+        height: 200px; 
+        margin: 0;
+        border: 0;
+        
+    }
+    .TopdelaTabla{
+        font-size:50px;
+    }
+    .subtitulo{
+        font-size: 4rem;
+    }
+    .Block1{
+        width: 1900px;
+    }
+    .Texto{
+        font-size: 50px;
+    }
+    .Imgcafe{
+        height: 60%;
+        padding:10px;
+    }
+    .barras{
+        margin: 5px;
+        justify-content: start;
+        width: 50px;
+        height: 10px;
+    }
+    .Tabla{
+        width:100% ;
+    }
+    .btn-enviar{
+        height: 25px;
+        justify-content: center;
+    }
+    #respuesta{
+        height: 10%;
+        width: 100px;
+
+    }
+    #captcha.Block_captcha{
+        font-size: 5rem;
+    }
+    .botones-captcha{
+        display: flex;
+        flex-direction: column;
+        padding: 1%;
+    }
+    .usuario{
+        width:30% ;
+    }
+}
+

@@ -5,32 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CiberCafe Buales</title>
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="css/estilo.css">
     <link rel="icon" href="images/favicom.ico">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- navegacion -->
     <h1 class="title">CiberCafe "El Negro" Buales</h1>
-    <ul class="Navigation">
-        <li class="Botonera"><a class="Word" href="index.html">HOME</a></li>
-        <li class="Botonera"><a class="Word" href="Comida.html">COMIDA</a></li>
-        <li class="Botonera"><a class="Word" href="Computadoras.html">COMPUTADORAS</a></li>
-    </ul>
+    <div id="BotonMenu">
+        <div class="barras"></div>
+        <div class="barras"></div>
+        <div class="barras"></div>
+    </div>
+    <nav>
+        <ul class="Navigation">
+            <li class="Botonera"><a class="Word" href="index.html">Home</a></li>
+            <li class="Botonera"><a class="Word" href="Comida.html">Comidas</a></li>
+            <li class="Botonera"><a class="Word" href="Computadoras.html">Computadoras</a></li>
+        </ul>
+    </nav>
+    
     <!-- formulario -->
     <div>
-        <form class="formulario">Formulario
-            <div >
-                <div >Nombre:<input class="usuario" type="text"></div>
-                <div >Apellido: <input class="usuario" type="text"></div>
-                <div >Mail: <input class="usuario" type="text"></div>
-                <div >Mensaje: <input class="usuario" type="text"> </div>
-                <div class="Blocke_captcha"><button onclick="enviar(event);">ENVIAR</button></div>
-                <div class="Blocke_captcha" id="captcha"></div>
-                <div class="Blocke_captcha"><input id="respuesta" type="text"></div>
+        <form>
+            <div class="formulario">
+                <div class="form">Nombre:</div><input class="usuario" type="text">
+                <div class="form">Apellido:</div><input class="usuario" type="text">
+                <div class="form">Mail: </div><input class="usuario" type="text">
+                <div class="form">Mensaje: </div><input class="usuario" type="text">
+            </div> 
+            <div class="botones-captcha">
+                <div class="Block_captcha" id="captcha"></div>
+                <input id="respuesta" type="text">
                 <div id="resultado"></div>
+                <div class="Block_captcha"><button class="btn-enviar" onclick="enviar(event);">ENVIAR</button></div>
             </div>
         </form>
     </div>
-    <script src="scrpit.js"></script>
+    <script src="javascript/formscript.js"></script>
+    <script src="javascript/javanav.js"></script>
 </body>
 </html>
