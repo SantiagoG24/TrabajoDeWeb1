@@ -17,8 +17,6 @@
     border-color: black;
 }
 .title{
-    /* font-size:3.5rem; */
-    /* width: 690px; */
     text-align: center;
     color: black;
 }
@@ -27,7 +25,7 @@
     background-color: rgba(38, 27, 5, 0.877) ;
     max-width: 100%;
     display: none;
-    justify-content: left;
+    justify-content: space-between;
     font-size: larger;
     flex-wrap: wrap;
 }
@@ -98,7 +96,6 @@ table{
 .FotosdelaTabla{
     display: flex;
     justify-content: center;
-    padding: 0.5rem;
     width: 150px;  
     height: 100px; 
     margin: 0;
@@ -141,9 +138,6 @@ table{
 }
 #BotonMenu{
     background-color: rgba(38, 27, 5, 0.877);
-
-    /* width: 100%
-    height: 50px; */
 }
 #respuesta{
     width:40%;
@@ -158,6 +152,7 @@ table{
     height: 100%;
     background-color: bisque;
     text-align: left;
+    padding: 2%;
 
 }
 .Block_captcha{
@@ -171,52 +166,24 @@ table{
     font-size: 2rem;
 }
 .btn-enviar{
-    width:40% ;
+    width:80% ;
     
 }
 #captcha.Block_captcha{
     width: 40%;
+    font-size: 2rem;
 }
 .botones-captcha{
     height: 100%;
     background-color: bisque;  
     display: flex;
-  
+    padding: 2%;
 }
-
-/* @media only screen and (max-width:1515px) {
-    table{
-        width: 1000px;
-        height: 550px;  
-    }
-    td{
-        font-size: 25px;
-    }
-    .FotosdelaTabla{
-        width: 250px;  
-        height: 200px;
-    }
-    .title{
-        font-size: 80px;
-    }
-    .Word{
-        font-size: 60px;
-    }
-    .subtitulo{
-        font-size: 40px;
-    }
-    .Texto{
-        font-size: 35px;
-    }
-} */
-/* @media only screen and (min-width:1650px) {
-    .Navigation{
-        width: 1860px;
-        display: flex;
-        display: inline-flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+.usuario{
+    width:60% ;
+    display: block;
+}
+@media only screen and (min-width:1650px) {
     .title{
         font-size: 100px;
         display: flex;
@@ -234,19 +201,30 @@ table{
         height: 3500px;
 
     }
+    th{
+        font-size: 3rem;
+    }
     td{
-        width: 1000px;
-        font-size: 40px;
+        width: 33%;
+        height: 250px;
+        font-size: 2rem;
+        
     }
     .FotosdelaTabla{
-        width: 500px;
-        height: 500px;
+        display: flex;
+        justify-content: end;
+        padding: 0.5rem;
+        width: 350px;  
+        height: 200px; 
+        margin: 0;
+        border: 0;
+        
     }
     .TopdelaTabla{
         font-size:50px;
     }
     .subtitulo{
-        font-size: 70px;
+        font-size: 4rem;
     }
     .Block1{
         width: 1900px;
@@ -255,18 +233,37 @@ table{
         font-size: 50px;
     }
     .Imgcafe{
-        width: 1900px;
-        height: 900px;
-        display: flex;
-        flex-wrap: wrap;
+        height: 60%;
         padding:10px;
     }
     .barras{
         margin: 5px;
-        display: flex;
         justify-content: start;
         width: 50px;
         height: 10px;
-        background-color: blueviolet;
     }
-} */
+    .Tabla{
+        width:100% ;
+    }
+    .btn-enviar{
+        height: 25px;
+        justify-content: center;
+    }
+    #respuesta{
+        height: 10%;
+        width: 100px;
+
+    }
+    #captcha.Block_captcha{
+        font-size: 5rem;
+    }
+    .botones-captcha{
+        display: flex;
+        flex-direction: column;
+        padding: 1%;
+    }
+    .usuario{
+        width:30% ;
+    }
+}
+
