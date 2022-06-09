@@ -1,0 +1,272 @@
+.BoxPrincipal{
+    display: flex;
+    flex-direction: row;
+    width: 2500px;   
+    height: 500px;
+    margin: 100px;
+    
+}
+
+.Box2{
+    color: black;
+    width: 25000px;
+    height: 500px;
+    background-color:red;
+    padding-left: 10px;
+    border-style:solid;
+    border-color: black;
+}
+.title{
+    /* font-size:3.5rem; */
+    /* width: 690px; */
+    text-align: center;
+    color: black;
+}
+
+.Navigation{
+    background-color: rgba(38, 27, 5, 0.877) ;
+    max-width: 100%;
+    display: none;
+    justify-content: left;
+    font-size: larger;
+    flex-wrap: wrap;
+}
+
+ .Botonera{
+    display: inline;
+    font-size: large;
+    list-style: none;
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 1%;
+}
+
+.Word{
+    text-decoration-line: none;
+    color: white;
+    cursor: pointer;
+    border-color: rgb(82, 65, 18);
+    border-style: hidden;
+    font-size: 20px;
+} 
+.Word:hover{
+    background-color:#493906;
+    color: white;
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 1%;
+}
+body{
+    background-image:url(../images/cafe\ 4.jpg);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-repeat: repeat;
+}
+.parrafo{
+    text-align: left;
+}
+
+.usuario{
+    font-size: x-large;
+}
+
+.subtitulo{
+    font-size: 50px;
+}
+th{
+    color: white;
+    font-size: 1rem;
+} 
+td{
+    font-size: 1rem;
+}      
+tbody{
+    color:white;  
+    width: 70%;
+}
+
+table,td,tr {
+    border: 3px solid black;
+    border-collapse:collapse;
+}
+table{
+    background-color: rgba(38, 27, 5, 0.877);
+    width: 100%;
+
+}
+.FotosdelaTabla{
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+    width: 150px;  
+    height: 100px; 
+    margin: 0;
+    border: 0;
+}
+.Tabla{
+    font-size: 0.5rem; 
+    width: 410px;
+    text-align: center;
+}
+.TopdelaTabla{
+    font-size: 0.5rem;
+}
+.Texto{
+    font-size: 19px;
+}
+.Block1{
+    background-color: rgba(38, 27, 5, 0.877);
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.Imgcafe{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.barras{
+    margin: 5px;
+    display: flex;
+    justify-content: start;
+    width: 60px;
+    height: 10px;
+    background-color: rgb(21, 21, 21);
+}
+.visible{
+    display: flex;
+}
+#BotonMenu{
+    background-color: rgba(38, 27, 5, 0.877);
+
+    /* width: 100%
+    height: 50px; */
+}
+#respuesta{
+    width:40%;
+    height: 80%;
+}
+#resultado{
+    width: 1rem;
+    height: 80%;
+
+}
+.formulario{
+    height: 100%;
+    background-color: bisque;
+    text-align: left;
+
+}
+.Block_captcha{
+    display: inline;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 30%;
+    height: 50%;
+}
+.form{
+    font-size: 2rem;
+}
+.btn-enviar{
+    width:40% ;
+    
+}
+#captcha.Block_captcha{
+    width: 40%;
+}
+.botones-captcha{
+    height: 100%;
+    background-color: bisque;  
+    display: flex;
+  
+}
+
+/* @media only screen and (max-width:1515px) {
+    table{
+        width: 1000px;
+        height: 550px;  
+    }
+    td{
+        font-size: 25px;
+    }
+    .FotosdelaTabla{
+        width: 250px;  
+        height: 200px;
+    }
+    .title{
+        font-size: 80px;
+    }
+    .Word{
+        font-size: 60px;
+    }
+    .subtitulo{
+        font-size: 40px;
+    }
+    .Texto{
+        font-size: 35px;
+    }
+} */
+/* @media only screen and (min-width:1650px) {
+    .Navigation{
+        width: 1860px;
+        display: flex;
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .title{
+        font-size: 100px;
+        display: flex;
+        width: 1860px;
+        justify-content: center;
+    }
+    .Word{
+        font-size: 50px;
+    }
+    .formulario{
+        font-size: 40px;
+    }
+    .TextodelaTabla{
+        width: 1895px;
+        height: 3500px;
+
+    }
+    td{
+        width: 1000px;
+        font-size: 40px;
+    }
+    .FotosdelaTabla{
+        width: 500px;
+        height: 500px;
+    }
+    .TopdelaTabla{
+        font-size:50px;
+    }
+    .subtitulo{
+        font-size: 70px;
+    }
+    .Block1{
+        width: 1900px;
+    }
+    .Texto{
+        font-size: 50px;
+    }
+    .Imgcafe{
+        width: 1900px;
+        height: 900px;
+        display: flex;
+        flex-wrap: wrap;
+        padding:10px;
+    }
+    .barras{
+        margin: 5px;
+        display: flex;
+        justify-content: start;
+        width: 50px;
+        height: 10px;
+        background-color: blueviolet;
+    }
+} */
