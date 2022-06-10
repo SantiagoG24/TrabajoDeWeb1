@@ -20,16 +20,28 @@
     <div>
         <form class="formulario">Formulario
             <div >
-                <div >Nombre:<input class="usuario" type="text"></div>
-                <div >Apellido: <input class="usuario" type="text"></div>
-                <div >Mail: <input class="usuario" type="text"></div>
-                <div >Mensaje: <input class="usuario" type="text"> </div>
-                <div class="Blocke_captcha"><button onclick="enviar(event);">ENVIAR</button></div>
+                <div >Nombre:<input id="nombre" class="usuario" type="text"></div>
+                <div >Mail: <input id="mail" class="usuario" type="text"></div>
+                <div >Hora: <input id="horario" class="usuario" type="number"></div>
+                <div class="Blocke_captcha"><button id="buttom">ENVIAR</button></div>
+                <button id="buttonx3">Enviar x3</button>
                 <div class="Blocke_captcha" id="captcha"></div>
                 <div class="Blocke_captcha"><input id="respuesta" type="text"></div>
                 <div id="resultado"></div>
             </div>
         </form>
+        <table class="TextodelaTabla">
+            <thead class="TopdelaTabla">
+            <tr>
+            <th>Nombre</th>
+            <th>Mail</th>
+            <th>Hora</th>
+            </tr>
+            </thead>
+            <tbody id="lista">
+
+            </tbody>
+        </table>
     </div>
     <script src="scrpit.js"></script>
 </body>
