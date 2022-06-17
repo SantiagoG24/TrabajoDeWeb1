@@ -10,7 +10,14 @@ captcha.innerHTML = valor1 + "+" + valor2;
 
 let final = document.getElementById("resultado");
 
+let betnx3 = document.querySelector("#buttonx3");
+
 let refreshflase = document.getElementById("respuesta");
+
+let btn = document.querySelector("#buttom");
+
+btn.addEventListener('click', enviar);
+
 function enviar(event){
     event.preventDefault();
     let nombre = document.querySelector('#nombre').value;
