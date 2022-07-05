@@ -1,29 +1,12 @@
-.BoxPrincipal{
-    display: flex;
-    flex-direction: row;
-    width: 2500px;   
-    height: 500px;
-    margin: 100px;
-    
-}
-
-.Box2{
-    color: black;
-    width: 25000px;
-    height: 500px;
-    background-color:red;
-    padding-left: 10px;
-    border-style:solid;
-    border-color: black;
-}
 .title{
+    font-size: 23px;
     text-align: center;
     color: black;
 }
 
 .Navigation{
     background-color: rgba(38, 27, 5, 0.877) ;
-    max-width: 100%;
+    max-width: 83%;
     display: none;
     justify-content: space-between;
     font-size: larger;
@@ -101,6 +84,13 @@ table{
     margin: 0;
     border: 0;
 }
+.TextodelaTabla{
+    width: 75vw !important;
+
+}
+nav{
+    width: 114%;
+}
 .Tabla{
     font-size: 0.5rem; 
     width: 410px;
@@ -111,6 +101,7 @@ table{
 }
 .Texto{
     font-size: 19px;
+    width: 70%;
 }
 .Block1{
     background-color: rgba(38, 27, 5, 0.877);
@@ -120,10 +111,14 @@ table{
     flex-wrap: wrap;
     justify-content: space-around;
 }
+td.Tabla_comida{
+    max-width: 85px;
+
+}
 .Imgcafe{
     display: flex;
-    width: 100%;
-    justify-content: center;
+    width: 90%;
+    justify-content: flex-end;
 }
 .barras{
     margin: 5px;
@@ -135,8 +130,10 @@ table{
 }
 .visible{
     display: flex;
+    margin-top: 0%;
 }
 #BotonMenu{
+    width: 100%;
     background-color: rgba(38, 27, 5, 0.877);
 }
 #respuesta{
@@ -184,24 +181,35 @@ table{
     width:60% ;
     display: block;
 }
-@media only screen and (min-width:1650px) {
+@media only screen and (min-width:992px) {
+    Nav{
+        width: 117%;
+    }
     .title{
-        font-size: 100px;
+        font-size: 60px;
         display: flex;
-        width: 1860px;
+        width:100%;
         justify-content: center;
     }
+    .contenedor_principal{
+        display: flex;
+        flex-direction: column;
+    }
+    .contenedor_tabla{
+        display: flex;
+        justify-content: center;
+    }
+    li 
     .Word{
         font-size: 50px;
     }
     .formulario{
         font-size: 40px;
     }
-    .TextodelaTabla{
-        width: 1895px;
-        height: 3500px;
+    /* .TextodelaTabla{
+        height: 3500px; 
 
-    }
+    } */
     th{
         font-size: 3rem;
     }
@@ -213,7 +221,6 @@ table{
     }
     .FotosdelaTabla{
         display: flex;
-        justify-content: end;
         padding: 0.5rem;
         width: 350px;  
         height: 200px; 
@@ -228,13 +235,14 @@ table{
         font-size: 4rem;
     }
     .Block1{
-        width: 1900px;
+        width:100%;
     }
     .Texto{
-        font-size: 50px;
+        font-size: 20px;
     }
     .Imgcafe{
-        height: 60%;
+        height: 70%;
+        width: 70%;
         padding:10px;
     }
     .barras{
@@ -265,6 +273,30 @@ table{
     }
     .usuario{
         width:30% ;
+    }
+     td.fila_tabla{
+        width: 40px;
+        height: 2px ;
+    }
+    .borrar{
+        width:55px ;
+        height:55px ;
+        padding: 5px;
+        border-radius: 50%;
+    }
+    .bi-trash{
+        font-size:40px;
+    }
+    .editar{
+        width:55px ;
+        height:55px ;
+
+    }
+    .bi.bi-pencil{
+        font-size: 38px;
+    }
+    tr.fila{
+        height: 50px;
     }
 }
 

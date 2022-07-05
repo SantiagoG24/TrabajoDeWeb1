@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,37 +8,46 @@
     <title>CiberCafe Buales</title>
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="icon" href="images/favicom.ico">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+        
 </head>
+
 <body>
     <!-- formulario -->
-    <div>
+    <div class="contenedor_principal">
         <form class="formulario">Formulario
-            <div >
-                <div >Nombre:<input id="nombre" class="usuario" type="text"></div>
-                <div >Mail: <input id="mail" class="usuario" type="text"></div>
-                <div >Hora: <input id="horario" class="usuario" type="number"></div>
+            <div>
+                <label for="nombre1">Nombre:</label>
+                <input id="nombre" class="usuario" type="text"  name="nombre1">
+                <div>Mail: <input id="mail" class="usuario" type="email"></div>
+                <div>Hora: <input id="horario" class="usuario" type="number" max="24" min="0"></div>
                 <div class="Blocke_captcha"><button id="buttom">ENVIAR</button></div>
                 <button id="buttonx3">Enviar x3</button>
                 <div class="Blocke_captcha" id="captcha"></div>
                 <div class="Blocke_captcha"><input id="respuesta" type="text"></div>
                 <div id="resultado"></div>
+                <div id="msg"></div>
             </div>
         </form>
+    </div>
+    <div class="contenedor_tabla">
         <table class="TextodelaTabla">
             <thead class="TopdelaTabla">
-            <tr>
-            <th>Nombre</th>
-            <th>Mail</th>
-            <th>Hora</th>
-            </tr>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Mail</th>
+                    <th>Hora</th>
+                    <th>Borrar</th>
+                    <th>Editar</th>
+                </tr>
             </thead>
             <tbody id="lista">
 
             </tbody>
         </table>
     </div>
-    <script src="javascript/formscript.js"></script>
     <script src="javascript/javanav.js"></script>
+    <script src="javascript/formscript.js"></script>
 </body>
+
 </html>
