@@ -24,8 +24,8 @@ function enviar(e) {
     let final= document.querySelector("#res_captcha");
     let nombre = document.querySelector("#nombre");
     let mail = document.querySelector("#mail");
-    let hora = document.querySelector("#horario");
-    if((nombre!="")&&(mail!="")&&(24>hora)&&(hora>0)){
+    let hora = document.querySelector("#horario").value;
+    if((nombre.value!='')&&(mail.value!='')&&(hora<24)&&(hora>0)){
         if (validarcaptcha()) {
             final.innerHTML = "El captcha es correcto";
             agregarcliente(nombre, mail, hora);
@@ -33,26 +33,26 @@ function enviar(e) {
             final.innerHTML = "El captcha es incorrecto";
         }
     }else{
-        final.innerHTML="Usted ingreso un horarrio fuera del rango o no completo todos los campos";
+        final.innerHTML="Usted ingreso un horario fuera del rango o no completo todos los campos";
     }
 }
-function agregarx3(e) {
+async function agregarx3(e) {
     e.preventDefault();
     let final= document.querySelector("#res_captcha");
     let nombre = document.querySelector("#nombre");
     let mail = document.querySelector("#mail");
-    let hora = document.querySelector("#horario");
-    if((nombre!="")&&(mail!="")&&(24>hora)&&(hora>0)){
+    let hora = document.querySelector("#horario").value;
+    if((nombre.value!='')&&(mail.value!='')&&(hora<24)&&(hora>0)){
         if (validarcaptcha()) {
             final.innerHTML = "El captcha es correcto";
             for (let index = 0; index < 3; index++) {
-            agregarcliente(nombre, mail, hora++);
+            await agregarcliente(nombre, mail, hora++);
             }
         } else {
             final.innerHTML = "El captcha es incorrecto";
         }  
     }else{
-        final.innerHTML="Usted ingreso un horarrio fuera del rango o no completo todos los campos ";
+        final.innerHTML="Usted ingreso un horario fuera del rango o no completo todos los campos ";
     }
 }
 
@@ -80,7 +80,7 @@ async function agregarcliente(nombre, mail, hora) {
     let clientenuevo = {
         "Nombre": nombre.value,
         "Mail": mail.value,
-        "Hora": Number(hora.value) 
+        "Hora": Number(hora)
     }
     console.log(hora);
     console.log(clientenuevo);
@@ -92,6 +92,7 @@ async function agregarcliente(nombre, mail, hora) {
         });
         if(res.status===201){
             msg.innerHTML="Creado!";
+            actualizarApi();
         }   
     } catch (error) {
         console.log(error)
@@ -141,28 +142,33 @@ async function borrar(id) {
     }
 }
 async function editar(id) {
+    let final= document.querySelector("#res_captcha");
     let nombre = document.querySelector('#nombre').value;
     let mail = document.querySelector('#mail').value;
     let hora = document.querySelector('#horario').value;
     let url_id = `${url}/${id}`;
-    let editar = {
-        "Nombre": nombre,
-        "Mail": mail,
-        "Hora": hora
-    }
-    try {
-        let res = await fetch(url_id, {
-            method: "PUT",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(editar)
-        });
-        if (res.status === 200) {
-            document.querySelector("#msg").innerHTML = "Su cambio se agrego"
-        actualizarApi();
-        } 
-    } catch (error) {
-        console.log(error);
+    if((nombre.value!='')&&(mail.value!='')&&(hora<24)&&(hora>0)){
+        let editar = {
+            "Nombre": nombre,
+            "Mail": mail,
+            "Hora": hora
+        }
+        try {
+            let res = await fetch(url_id, {
+                method: "PUT",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(editar)
+            });
+            if (res.status === 200) {
+                document.querySelector("#msg").innerHTML = "Su cambio se agrego"
+            actualizarApi();
+            } 
+        } catch (error) {
+            console.log(error);
+        }
+    }else{
+        final.innerHTML="Usted ingreso un horario fuera del rango o no completo todos los campos";
     }
 }
