@@ -25,6 +25,7 @@ async function cargar(url) {
     }
 }
 
+
 document.querySelector("#btn-home").addEventListener('click', function () {
     cargar("home.html");
 });
